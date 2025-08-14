@@ -1,7 +1,6 @@
-from pydantic import ResponseModel
-from datetime import datetimeField
+from pydantic import BaseModel
 
-class NewsModel(ResponseModel):
+class NewsModel(BaseModel):
     id: int
     lead: str
     content: str
