@@ -1,3 +1,10 @@
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-from .routes import router as api_router
+from routers import router
+
+app = FastAPI()
+
+print("API is running...")
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app)
+    
