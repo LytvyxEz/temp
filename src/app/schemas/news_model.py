@@ -1,5 +1,5 @@
 from pydantic import ResponseModel
-from datetime import datetimeField
+
 
 class NewsModel(ResponseModel):
     id: int
