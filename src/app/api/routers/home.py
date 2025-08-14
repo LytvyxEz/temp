@@ -1,6 +1,5 @@
 from fastapi import APIRouter
-from app.schemas.news_model import NewsModel
-
+from ...schemas import NewsModel
 
 router = APIRouter()
 
