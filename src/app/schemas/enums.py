@@ -2,43 +2,61 @@ from enum import Enum
 
 
 class Sex(Enum):
-    men = 'men'
-    women = 'women'
-    child = 'child'
-    unisex = 'unisex'
-    
+    MEN = 'men'
+    WOMEN = 'women'
+    CHILD = 'child'
+    UNISEX = 'unisex'
 
 class WomenClothes(Enum):
-    ...
-    
-    
-class MenClothes(Enum):
-    ...
+    DRESS = 'dress'
+    SKIRT = 'skirt'
+    BLOUSE = 'blouse'
+    PANTS = 'pants'
+    JACKET = 'jacket'
+    COAT = 'coat'
+    SWEATER = 'sweater'
+    T_SHIRT = 't-shirt'
 
+class MenClothes(Enum):
+    SHIRT = 'shirt'
+    PANTS = 'pants'
+    JACKET = 'jacket'
+    COAT = 'coat'
+    SWEATER = 'sweater'
+    T_SHIRT = 't-shirt'
+    SUIT = 'suit'
 
 class WomenShoes(Enum):
-    ...
-    
+    HEELS = 'heels'
+    FLATS = 'flats'
+    SNEAKERS = 'sneakers'
+    BOOTS = 'boots'
+    SANDALS = 'sandals'
 
 class MenShoes(Enum):
-    ...
+    OXFORD = 'oxford'
+    LOAFERS = 'loafers'
+    SNEAKERS = 'sneakers'
+    BOOTS = 'boots'
+    SANDALS = 'sandals'
 
 
-class Clothes(Enum):
-    women: WomenClothes
-    men: MenClothes
+Clothes = {
+    'women': WomenClothes,
+    'men': MenClothes
+}
 
-
-class Shoes(Enum):
-    women: WomenShoes
-    men: MenShoes
+Shoes = {
+    'women': WomenShoes,
+    'men': MenShoes
+}
 
 
     
-class Type(Enum):
-    clothes: Clothes
-    shoes: Shoes
-    
+Type = {
+    'clothes': Clothes,
+    'shoes': Shoes
+}
 
 
 class Eu_size(Enum):
@@ -109,11 +127,11 @@ class Us_size(Enum):
 
 
     
-class ShoesSize(Enum):
-    eu_size: Eu_size
-    uk_size: Uk_size
-    us_size: Us_size
-
+ShoesSize = {
+    'eu_size': Eu_size,
+    'uk_size': Uk_size,
+    'us_size': Us_size,
+}
 
 
 
@@ -127,15 +145,15 @@ class ClothesSize(Enum):
     XL = "XL"
     XXL = "XXL"
     XXXL = "XXXL"
-    _4XL = "4XL"
-    _5XL = "5XL"
+    XXXXL = "4XL"
+    XXXXXL = "5XL"
 
 
     
-class Size(Enum):
-    shoes: ShoesSize
-    clothes: ClothesSize
-    
+Size = {
+    'shoes': ShoesSize,
+    'clothes': ClothesSize
+}
     
 
 
@@ -164,9 +182,10 @@ class Color(Enum):
     
     
 class State(Enum):
-    new = 'new'
-    used = 'used'
+    NEW = 'new'
+    USED = 'used'
     
+
     
 class Material(Enum):
     COTTON = "cotton"          # бавовна
