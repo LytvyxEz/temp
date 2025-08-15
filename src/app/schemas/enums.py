@@ -8,42 +8,30 @@ class Sex(Enum):
     unisex = 'unisex'
     
 
+class WomenClothes(Enum):
+    ...
+    
+    
+class MenClothes(Enum):
+    ...
+
+
+class WomenShoes(Enum):
+    ...
+    
+
+class MenShoes(Enum):
+    ...
+
+
 class Clothes(Enum):
-    T_SHIRT = "t_shirt"        # футболка
-    SHIRT = "shirt"            # сорочка
-    BLOUSE = "blouse"          # блуза
-    SWEATER = "sweater"        # светр
-    HOODIE = "hoodie"          # худі
-    JACKET = "jacket"          # куртка
-    COAT = "coat"              # пальто
-    DRESS = "dress"            # сукня
-    SKIRT = "skirt"            # спідниця
-    PANTS = "pants"            # штани
-    JEANS = "jeans"            # джинси
-    SHORTS = "shorts"          # шорти
-    LEGGINGS = "leggings"      # легінси
-    SUIT = "suit"              # костюм
-    SWIMWEAR = "swimwear"      # купальник
-    UNDERWEAR = "underwear"    # білизна
-    PAJAMAS = "pajamas"        # піжама
-    SPORTSWEAR = "sportswear"  # спортивний одяг
-    OVERALLS = "overalls"      # комбінезон
+    women: WomenClothes
+    men: MenClothes
 
 
 class Shoes(Enum):
-    SNEAKERS = "sneakers"      # кросівки
-    BOOTS = "boots"            # чоботи
-    ANKLE_BOOTS = "ankle_boots" # черевики
-    SANDALS = "sandals"        # сандалі
-    SLIPPERS = "slippers"      # капці
-    LOAFERS = "loafers"        # лофери
-    HEELS = "heels"            # підбори
-    FLATS = "flats"            # балетки
-    OXFORDS = "oxfords"        # оксфорди
-    MOCASSINS = "mocassins"    # мокасини
-    ESPADRILLES = "espadrilles"# еспадрильї
-    CLOGS = "clogs"            # сабо
-    FLIP_FLOPS = "flip_flops"  # в'єтнамки
+    women: WomenShoes
+    men: MenShoes
 
 
     
@@ -51,7 +39,7 @@ class Type(Enum):
     clothes: Clothes
     shoes: Shoes
     
-    
+
 
 class Eu_size(Enum):
     EU_35 = "35"
