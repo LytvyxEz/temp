@@ -1,3 +1,5 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+poetry.lock
+.DS_Store/
