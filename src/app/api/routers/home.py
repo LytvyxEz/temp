@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+
 from src.app.schemas.news_model import NewsModel
 
 
