@@ -15,7 +15,7 @@ class FiltersModel(BaseModel):
     type_: Optional[str] = Field(None)
     size: Optional[Union[str, ClothesSize, EuSize, UkSize, UsSize]] = None
     size_by_native: Optional[str] = Field(None) # eu/uk/us
-    color: Optional[Color['color_olx'] or Color['color_shafa']] = None
+    color: Optional[Union[ColorOlx, ColorShafa, str]] = None
     price_min: Optional[PositiveFloat] = None
     price_max: Optional[PositiveFloat] = None
     state: Optional[State] = None
