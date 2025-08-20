@@ -202,9 +202,26 @@ class ClothesSize(Enum):
     XXXXXL = "5XL"
 
 
-
 class ColorOlx(Enum):
-    ...
+    WHITE = "write"
+    GRAY = "gray"
+    RED = "red"
+    BLACK = "black"
+    LIGHT_BLUE = "light_blue"
+    BLUE = "blue"
+    PURPLE = "purple"
+    PINK = "pink"
+    YELLOW = "yellow"
+    ORANGE = "orange"
+    BURGUNDY = "burgundy"
+    BROWN = "brown"
+    GREEN = "green"
+    BEIGE = "beige"
+    TURQUOISE = "turquoise"
+    GOLD = "gold"
+    KHAKI = "khaki"
+    MULTI = "multi_color"
+    OTHER = "other"
     
     
 class ColorShafa(Enum):
