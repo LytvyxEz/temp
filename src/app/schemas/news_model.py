@@ -6,6 +6,6 @@ class NewsModel(BaseModel):
     lead: str
     content: str
     photo_url: str
-        
+    created_at: str 
 
  

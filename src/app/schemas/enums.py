@@ -202,37 +202,19 @@ class ClothesSize(Enum):
     XXXXXL = "5XL"
 
 
-class Color(Enum):
-    RED = "red"
-    GREEN = "green"
-    BLUE = "blue"
-    WHITE = "white"
-    BLACK = "black"
-    YELLOW = "yellow"
-    CYAN = "cyan"
-    MAGENTA = "magenta"
-    ORANGE = "orange"
-    PURPLE = "purple"
-    PINK = "pink"
-    BROWN = "brown"
-    GRAY = "gray"
-    LIGHT_GRAY = "lightgray"
-    DARK_GRAY = "darkgray"
-    GOLD = "gold"
-    SILVER = "silver"
-    LIME = "lime"
-    INDIGO = "indigo"
-    VIOLET = "violet"
-    NAVY = "navy"
-    BEIGE = "beige"
-    CREAM = "cream"
-    MAROON = "maroon"
-    TURQUOISE = "turquoise"
-    OLIVE = "olive"
-    CORAL = "coral"
-    MINT = "mint"
-    LAVENDER = "lavender"
-    MULTICOLOR = "multicolor"
+
+class ColorOlx(Enum):
+    ...
+    
+    
+class ColorShafa(Enum):
+    ...
+
+
+Color = {
+    "color_olx": ColorOlx,
+    "color_shafa": ColorShafa,
+}
 
 
 class State(Enum):

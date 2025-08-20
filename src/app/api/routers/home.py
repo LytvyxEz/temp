@@ -6,3 +6,4 @@ router = APIRouter()
 @router.get("/news", response_model=NewsModel)
 async def news(data: dict = None):
     return {'data': data or []}
+
