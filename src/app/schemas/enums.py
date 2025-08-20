@@ -208,19 +208,19 @@ class ColorOlx(Enum):
     
     
 class ColorShafa(Enum):
-    'black' = 'black'
-    'white' = 'white'
-    'red' = 'red'
-    'blue' = 'blue'
-    'yellow' = 'yellow'
-    'green' = 'green'
-    'gray' = 'gray'
-    'lime' = 'lime'
-    'purple' = 'purple'
-    'brown' = 'brown'
-    'orange' = 'orange'
-    'pink' = 'pink'
-    'multicolor' = 'multicolor'
+    BLACK = 'black'
+    WHITE = 'white'
+    RED = 'red'
+    BLUE = 'blue'
+    YELLOW = 'yellow'
+    GREEN = 'green'
+    GRAY = 'gray'
+    LIME = 'lime'
+    PURPLE = 'purple'
+    BROWN = 'brown'
+    ORANGE = 'orange'
+    PING = 'pink'
+    MULTICOLOR = 'multicolor'
     
 
 
