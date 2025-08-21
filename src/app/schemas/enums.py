@@ -282,35 +282,50 @@ class Material(Enum):
     MIXED = "mixed"
 
 
-class Brand(Enum):
-    NIKE = "nike"
-    ADIDAS = "adidas"
-    ZARA = "zara"
-    H_AND_M = "h&m"
-    UNIQLO = "uniqlo"
-    GUCCI = "gucci"
-    PRADA = "prada"
-    CHANEL = "chanel"
-    LOUIS_VUITTON = "louis vuitton"
-    BALENCIAGA = "balenciaga"
-    VERSACE = "versace"
-    ARMANI = "armani"
-    CALVIN_KLEIN = "calvin klein"
-    TOMMY_HILFIGER = "tommy hilfiger"
-    RALPH_LAUREN = "ralph lauren"
-    LACOSTE = "lacoste"
-    HUGO_BOSS = "hugo boss"
-    BURBERRY = "burberry"
-    DIESEL = "diesel"
-    LEVIS = "levi's"
-    GAP = "gap"
-    MANGO = "mango"
-    BERSHKA = "bershka"
-    PULL_AND_BEAR = "pull&bear"
-    STRADIVARIUS = "stradivarius"
-    MASSIMO_DUTTI = "massimo dutti"
-    COS = "cos"
-    OTHER = "other"
+class BrandOlx(Enum):
+    NIKE = "Nike"
+    ADIDAS = "Adidas"
+    PUMA = "Puma"
+    REEBOK = "Reebok"
+    ASICS = "Asics"
+    NEW_BALANCE = "New Balance"
+    CONVERSE = "Converse"
+    VANS = "Vans"
+    ZOHO = "Zoho"
+    HOCHU = "HOCHU"
+    UNIONBAY = "Unionbay"
+    ASH = "Ash"
+    DOSSIER = "Dossier"
+    REAL_TECHNIQUES = "Real Techniques"
+    BARAKA = "Baraka"
+    SUETA = "Sueta"
+    HUGO_BOSS = "Hugo Boss"
+    LORENZO_VERATTI = "Lorenzo Veratti"
+    SAKS_FIFTH_AVENUE = "Saks Fifth Avenue"
+    ISAIA_NAPOLI = "Isaia Napoli"
+    PAUL_SMITH = "Paul Smith"
+    REISS = "Reiss"
+    BOGGI_MILANO = "Boggi Milano"
+    ARMANI = "Armani"
+    GUCCI = "Gucci"
+    RELIGION = "Religion"
+    SMET_LOS_ANGELES = "Smet Los Angeles"
+    AERONAUTICA_MILITARE = "Aeronautica Militare"
+    SCOTCH_SODA = "Scotch & Soda"
+    GANT = "Gant"
+    TOMMY_HILFIGER = "Tommy Hilfiger"
+    JOHN_RICHMOND = "John Richmond"
+
+    
+    
+class BrandShafa(Enum):
+    ...
+
+
+Brand = {
+    'Brand_olx': BrandOlx,
+    'Brand_shafa': BrandShafa
+}
 
 
 CLOTHES_BY_SEX = {

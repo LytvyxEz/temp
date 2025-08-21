@@ -101,13 +101,13 @@ class SearchModel(BaseModel):
 class ProductModel(BaseModel):
     id: str
     title: str
-    brand: Optional[str] = None
+    brand: Optional[Union[BrandOlx, BrandShafa, str]] = None
     sex: Optional[Sex] = None
     category: str  # clothes or shoes
     type_: Optional[str] = Field(None)
     size: Optional[str] = None
     size_by_native: Optional[str] = None
-    color: Optional[Color] = None
+    color: Optional[Union[ColorShafa, ColorOlx, str]] = None
     price: PositiveFloat
     state: Optional[State] = None
     material: Optional[Material] = None
