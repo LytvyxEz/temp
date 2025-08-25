@@ -12,8 +12,9 @@ async def news_get(data: dict = None):
 
 
 @news_router.post('/news')
-async def news_post():
-    return ...
+async def news_post(news: NewsModel):
+
+    return news
 
 
 @news_router.get('/news_search')
