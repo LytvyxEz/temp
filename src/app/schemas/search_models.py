@@ -9,7 +9,7 @@ def strip_lower(v):
 
 class FiltersModel(BaseModel):
     title: Optional[str] = Field(None, min_length=1, max_length=50)
-    brand: Optional[Union[Brand, str]] = None
+    brand: Optional[Union[BrandOlx, BrandShafa, str]] = None
     sex: Optional[Sex] = None
     category: Optional[str] = Field(None) # clothes/shoes
     type_: Optional[str] = Field(None)
@@ -114,7 +114,20 @@ class ProductModel(BaseModel):
     description: Optional[str] = None
     images: List[str] = Field(default_factory=list)
     url: str
+    top_ad: Optional[bool]
+    source: str  # olx or shafa
 
+
+    @field_validator('top_ad', mode='before')
+    @classmethod
+    def validate_top_ad(cls, v):
+        if v:
+            v = True
+            return v
+        else:
+            v = False
+            return v
+    
 
     @field_validator('title', 'brand', 'description', mode='before')
     @classmethod

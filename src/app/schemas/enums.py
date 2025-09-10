@@ -203,7 +203,7 @@ class ClothesSize(Enum):
 
 
 class ColorOlx(Enum):
-    WHITE = "write"
+    WHITE = "white"
     GRAY = "gray"
     RED = "red"
     BLACK = "black"
